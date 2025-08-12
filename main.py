@@ -35,7 +35,7 @@ if not BOT_TOKEN:
     logging.error("BOT_TOKEN не найден в .env")
 
 # !!!! УКАЖИ ТУТ Telegram ID Ромы (как строку) !!!!
-ROMA_ID = os.getenv("ROMA_ID", "123456789")  # <-- замени 123... на реальный ID или поставь в .env
+ROMA_ID = os.getenv("ROMA_ID", "1080067724")  # <-- замени 123... на реальный ID или поставь в .env
 
 # (необязательно) организатор/админ для обратной связи
 ORGANIZER_ID = os.getenv("ORGANIZER_ID", "")  # можно пустым оставить
@@ -283,3 +283,4 @@ if __name__ == "__main__":
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_buttons))
 
     app.run_polling(drop_pending_updates=True)
+
